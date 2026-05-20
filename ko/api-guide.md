@@ -24,33 +24,27 @@
 {
     "inputText": "입력 텍스트",
     "fileType": "WAV",
-    "language": "KO",
-    "speaker": "MALE",
-    "emotion": "NEUTRAL",
-    "pitch": 0,
+    "speaker": "MALE_A",
     "speed": 1,
-    "volume": 0
+    "samplingRate": 22050
 }
 ```
 
 [필드]
 
-| 이름 | 타입 | 필수 여부 | 기본값 | 유효 범위 | 설명 |
-|---|---|---|---|---|---|
-| inputText | String | 필수 | | 최대 1000자 | 입력 텍스트 |
-| fileType | String | 선택 | MP3 | MP3/WAV | 파일 형식(.mp3, .wav) |
-| language | String | 선택 | KO | KO/EN/JA/ZH | 언어(한국어, 영어, 일본어, 중국어) |
-| speaker | String | 선택 | FEMALE | MALE/FEMALE | 음성 종류(남성, 여성) |
-| emotion | String | 선택 | NEUTRAL | NEUTRAL/DARK/BRIGHT | 음성 감정(기본, 어두운, 밝은) |
-| pitch | Float | 선택 | 0 | -12~12| 높낮이 |
-| speed | Float | 선택 | 1 | 0.5~4 | 속도 |
-| volume | Float | 선택 | 0 | -6~6 | 음량 |
+| 이름           | 타입      | 필수 여부 | 기본값      | 유효 범위                      | 설명                                                                    |
+|--------------|---------|-------|----------|----------------------------|-----------------------------------------------------------------------|
+| inputText    | String  | 필수    |          | 최대 150자                    | 입력 텍스트                                                                |
+| fileType     | String  | 선택    | MP3      | MP3/WAV/FLAC/OGG/ALAW/ULAW | 파일 형식(.mp3, .wav, .flac, .ogg, .alaw, .ulaw)                          |
+| speaker      | String  | 선택    | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B   | 음성 종류(남성, 여성, 여성2)                                                    |
+| speed        | Float   | 선택    | 1        | 0.5~2                      | 속도                                                                    |
+| samplingRate | Long    | 선택    | 22050    | 8000~44100                 | 음성 파일의 샘플링레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우엔 8000으로 고정되어야합니다 |
 
 #### 응답
 
 [성공 응답]
 * HTTP Status Code: 200
-* Content-Type: audio/wav 또는 audio/mpeg
+* Content-Type: audio/wav, audio/mpeg, audio/flac, audio/ogg, audio/x-alaw-basic(alaw), audio/basic(ulaw)
 * Body: byte[]
 
 [실패 응답]
@@ -65,13 +59,13 @@
     "errorList": [
         {
             "resultCode": 4000001,
-            "resultTitle": "Invalid parameter.  (speed)",
-            "resultMessage": "Must be equal to or less than  4 "
+            "resultTitle": "Invalid parameter.  (fileType)",
+            "resultMessage": "must be one of [MP3, FLAC, ULAW, WAV, OGG, ALAW]"
         },
         {
             "resultCode": 4000001,
-            "resultTitle": "Invalid parameter.  (pitch)",
-            "resultMessage": "Must be equal to or less than  12 "
+            "resultTitle": "Invalid parameter.  (speed)",
+            "resultMessage": "must be less than or equal to 2"
         }
     ]
 }

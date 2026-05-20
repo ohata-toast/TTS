@@ -10,11 +10,9 @@ It can be used in various areas such as automatic response services and book/Int
 
 * **Detailed settings for the voice file**
 	* You can set the conditions of voice for speech synthesis.
-		* Voice Type: You can set the voice type (male, female).
-		* Voice Emotion: You can set the voice emotion (neutral, dark, light).
-		* Pitch: You can set the pitch to implement the tone of the voice.
+		* Voice Type: You can set the voice type (male, female, female2).
 		* Speed: You can set the speed (1x, 2x, etc.) of the voice.
-		* Volume: You can set the volume.
+		* 음질: 음성파일의 음질을 설정할 수 있습니다.
 
 * **Speech synthesis results download**
 	* You can download audio files (.wav, .mp3) of the voice converted from input text.
@@ -23,8 +21,8 @@ It can be used in various areas such as automatic response services and book/Int
 
 For more accurate text-to-speech synthesis, please refer to the guide below.
 
-* Up to 1,000 characters (including spaces) of text can be entered.
-* For voice quality, it is recommended to enter less than 200 characters per sentence.
+* Up to 150 characters (including spaces) of text can be entered.
+* For voice quality, it is recommended to enter less than 50 characters per sentence.
 * Supported languages, numbers, and punctuation are supported for speech synthesis, and other text are excluded from the synthesis result.
     
 ## Service Targets
