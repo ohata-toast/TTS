@@ -10,16 +10,16 @@
 
 [URI]
 
-| Method | URI |
-|---|---|
-| POST | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| Method  | URI                                                              |
+|---------|------------------------------------------------------------------|
+| POST    | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [Request Header]
 
-| Name | Value | Description |
-|---|---|---|
-| Authorization | {secretKey} | Security key issued from the console |
-| Content-Type | application/json | |
+| Name          | Value            | Description                          |
+|---------------|------------------|--------------------------------------|
+| Authorization | {secretKey}      | Security key issued from the console |
+| Content-Type  | application/json |                                      |
 
 [Request Body]
 ```

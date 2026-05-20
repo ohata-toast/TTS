@@ -11,16 +11,16 @@
 
 [URI]
 
-| メソッド | URI |
-|---|---|
-| POST | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| メソッド  | URI                                                              |
+|-------|------------------------------------------------------------------|
+| POST  | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [リクエストヘッダ]
 
-| 名前 | 値 | 説明 |
-|---|---|---|
-| Authorization | {secretKey} | コンソールで発行されたセキュリティキー |
-| Content-Type | application/json | |
+| 名前            | 値                | 説明                  |
+|---------------|------------------|---------------------|
+| Authorization | {secretKey}      | コンソールで発行されたセキュリティキー |
+| Content-Type  | application/json |                     |
 
 [リクエスト本文]
 ```
