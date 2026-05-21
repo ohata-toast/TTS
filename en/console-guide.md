@@ -21,7 +21,7 @@ You can set detailed settings for the voice to be synthesized.
 
 After typing text, click **Synthesize Speech** to create an audio file of the entered text.
 
-![TTS](http://static.toastoven.net/prod_speech/tts_console_en.png)
+![TTS](http://static.toastoven.net/prod_speech/tts_console_new_en.png)
 
 * You can check the synthesized voice by clicking **Listen**.
 * You can download the synthesized file (.mp3, .wav, .flac, .ogg, .alaw, .ulaw) by clicking **Download**.

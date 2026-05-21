@@ -21,7 +21,7 @@
 
 텍스트를 입력한 뒤 **음성 합성**을 클릭하면 입력한 내용의 음성 파일이 생성됩니다.
 
-![TTS](http://static.toastoven.net/prod_speech/tts_console_ko.png)
+![TTS](http://static.toastoven.net/prod_speech/tts_console_new_ko.png)
 
 * **듣기**를 클릭해 합성된 음성을 확인할 수 있습니다.
 * **다운로드**를 클릭해 합성된 음성 파일(.mp3, .wav, .flac, .ogg, .alaw, .ulaw)을 다운로드할 수 있습니다.

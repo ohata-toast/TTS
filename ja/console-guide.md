@@ -21,7 +21,7 @@
 
 テキストを入力した後、**音声合成**をクリックすると、入力した内容の音声ファイルが作成されます。
 
-![TTS](http://static.toastoven.net/prod_speech/tts_console_ja.png)
+![TTS](http://static.toastoven.net/prod_speech/tts_console_new_ja.png)
 
 * **聞く**をクリックして合成された音声を確認できます。
 * **ダウンロード**をクリックして合成された音声ファイル(.mp3, .wav, .flac, .ogg, .alaw, .ulaw)をダウンロードできます。

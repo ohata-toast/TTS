@@ -3,6 +3,8 @@
 Text to Speech(TTS) uses NHN Cloud's character recognition and speech synthesis technology to recognize input text and synthesize speech from the recognized characters.
 It can be used in various areas such as automatic response services and book/Internet document reading services.
 
+※ 본 서비스의 음성 합성 모델 학습에는 자체 데이터와 함께 AI 허브(https://aihub.or.kr) 데이터셋의 일부가 활용되었습니다
+
 ## Main Features
 
 * **Speech synthesis**
