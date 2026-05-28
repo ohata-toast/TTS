@@ -14,6 +14,7 @@
 | 4000002     | MAX_UPLOAD_SIZE_EXCEEDED | Max upload file size exceeded.          |
 | 4000003     | INVALID_FILE_TYPE        | Invalid file type.                      |
 | 4000004     | UPLOADED_FILE_IS_EMPTY   | Uploaded file is empty.                 |
+| 4000101     | INVALID_SAMPLING_RATE    | Invalid sampling rate                   |
 | 4010001     | INVALID_APPKEY_SECRETKEY | Invalid appKey or secretKey.            |
 | 4010002     | INVALID_UUID             | Invalid uuid.                           |
 | 4010003     | NOT_ALLOWED_USER         | Not allowed user.                       |
