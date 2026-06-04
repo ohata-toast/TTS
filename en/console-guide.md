@@ -12,19 +12,16 @@ Enter the text that will be used for speech synthesis.
 
 You can set detailed settings for the voice to be synthesized.
 
-* Language: You can set the language (Korean, English, Japanese, Chinese) for speech synthesis.
-* File Format: Supports two file formats, mp3 and wav, as a result of speech synthesis.
-* Voice Type: You can set the voice type (male, female).
-* Voice Emotion: You can set the voice emotion (neutral, dark, light).
-* Pitch: You can set the pitch to implement the tone of the voice.
+* 파일 형식: 음성 합성의 결과로 mp3, wav, flac, ogg, alaw, ulaw 여섯 가지 파일 형식을 지원합니다.
+* Voice Type: You can set the voice type (male, female, female2).
 * Speed: You can set the speed (1x, 2x, etc.) of the voice.
-* Volume: You can set the volume.
+* 음질: 음질을 설정할 수 있습니다. (alaw, ulaw 형식의 경우에는 8000으로 고정됩니다.)
 
 ### Synthesize Speech
 
 After typing text, click **Synthesize Speech** to create an audio file of the entered text.
 
-![TTS](http://static.toastoven.net/prod_speech/tts_console_en.png)
+![TTS](http://static.toastoven.net/prod_speech/tts_console_new_en.png)
 
 * You can check the synthesized voice by clicking **Listen**.
-* You can download the synthesized file (.mp3, .wav) by clicking **Download**.
+* You can download the synthesized file (.mp3, .wav, .flac, .ogg, .alaw, .ulaw) by clicking **Download**.

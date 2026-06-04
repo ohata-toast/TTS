@@ -4,53 +4,50 @@
 
 #### リクエスト
 
-- {appKey}と{secretKey}はコンソール上部の**URL & Appkey** メニューで確認できます。
+TTS APIを使用するにはAppkeyまたはプロジェクト統合Appkeyが必要です。<br/>
+Appkeyは、NHN Cloudの各サービスごとに発行される固有の認証キーであり、プロジェクト統合Appkeyは、NHN Cloudの1つのプロジェクト内の複数のサービスに対して共通で使用できる認証キーです。<br/>
+Appkeyの確認及び使用に関する詳細は、[Appkey](/nhncloud/ja/public-api/appkey)を参照してください。プロジェクト統合Appkeyの作成及び使用に関する詳細は、[プロジェクト統合Appkey](/nhncloud/ja/public-api/project-integrated-appkey)を参照してください。
+
 
 [URI]
 
-| メソッド | URI |
-|---|---|
-| POST | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| メソッド  | URI                                                              |
+|-------|------------------------------------------------------------------|
+| POST  | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [リクエストヘッダ]
 
-| 名前 | 値 | 説明 |
-|---|---|---|
-| Authorization | {secretKey} | コンソールで発行されたセキュリティキー |
-| Content-Type | application/json | |
+| 名前            | 値                | 説明                  |
+|---------------|------------------|---------------------|
+| Authorization | {secretKey}      | コンソールで発行されたセキュリティキー |
+| Content-Type  | application/json |                     |
 
 [リクエスト本文]
 ```
 {
     "inputText": "入力テキスト",
     "fileType": "WAV",
-    "language": "JA",
-    "speaker": "MALE",
-    "emotion": "NEUTRAL",
-    "pitch": 0,
+    "speaker": "MALE_A",
     "speed": 1,
-    "volume": 0
+    "samplingRate": 22050
 }
 ```
 
 [フィールド]
 
-| 名前 | タイプ | 必須かどうか | デフォルト値 | 有効範囲 | 説明 |
-|---|---|---|---|---|---|
-| inputText | String | 必須 | | 最大1000文字 | 入力テキスト |
-| fileType | String | 任意 | MP3 | MP3/WAV | ファイル形式(.mp3、.wav) |
-| language | String | 任意 | KO | KO/EN/JA/ZH | 言語(韓国語、英語、日本語、中国語) |
-| speaker | String | 任意 | FEMALE | MALE/FEMALE | 音声の種類(男性、女性) |
-| emotion | String | 任意 | NEUTRAL | NEUTRAL/DARK/BRIGHT | 音声の感情(基本、暗い、明るい) |
-| pitch | Float | 任意 | 0 | -12~12| 高低 |
-| speed | Float | 任意 | 1 | 0.5~4 | 速度 |
-| volume | Float | 任意 | 0 | -6~6 | 音量 |
+| 名前           | タイプ    | 必須かどうか | デフォルト値   | 有効範囲                     | 説明                                                                        |
+|--------------|--------|--------|----------|--------------------------|---------------------------------------------------------------------------|
+| inputText    | String | 必須     |          | 最大150文字                  | 入力テキスト                                                                    |
+| fileType     | String | 任意     | MP3      | MP3/WAV                  | ファイル形式(.mp3, .wav, .flac, .ogg, .alaw, .ulaw))                            |
+| speaker      | String | 任意     | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B | 音声の種類(男性、女性、女性2)                                                          |
+| speed        | Float  | 任意     | 1        | 0.5~2                    | 速度                                                                        |
+| samplingRate | Long   | 선택     | 22050    | 8000~44100               | 음성 파일의 샘플링 레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우에는 8000으로 고정되어야 합니다. |
 
 #### レスポンス
 
 [成功レスポンス]
 * HTTP Status Code: 200
-* Content-Type: audio/wavまたはaudio/mpeg
+* Content-Type: audio/wav, audio/mpeg, audio/flac, audio/ogg, audio/x-alaw-basic(alaw), audio/basic(ulaw)
 * Body: byte[]
 
 [失敗レスポンス]
@@ -65,13 +62,13 @@
     "errorList": [
         {
             "resultCode": 4000001,
-            "resultTitle": "Invalid parameter.  (speed)",
-            "resultMessage": "Must be equal to or less than  4 "
+            "resultTitle": "Invalid parameter.  (fileType)",
+            "resultMessage": "must be one of [MP3, FLAC, ULAW, WAV, OGG, ALAW]"
         },
         {
             "resultCode": 4000001,
-            "resultTitle": "Invalid parameter.  (pitch)",
-            "resultMessage": "Must be equal to or less than  12 "
+            "resultTitle": "Invalid parameter.  (speed)",
+            "resultMessage": "must be less than or equal to 2"
         }
     ]
 }
