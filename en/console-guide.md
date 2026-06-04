@@ -12,10 +12,10 @@ Enter the text that will be used for speech synthesis.
 
 You can set detailed settings for the voice to be synthesized.
 
-* File Format: Supports two file formats, mp3 and wav, as a result of speech synthesis.
+* 파일 형식: 음성 합성의 결과로 mp3, wav, flac, ogg, alaw, ulaw 여섯 가지 파일 형식을 지원합니다.
 * Voice Type: You can set the voice type (male, female, female2).
 * Speed: You can set the speed (1x, 2x, etc.) of the voice.
-* 음질: 음질을 설정할 수 있습니다.(alaw, ulaw 형식의 경우엔 8000 으로 고정됩니다.)
+* 음질: 음질을 설정할 수 있습니다. (alaw, ulaw 형식의 경우에는 8000으로 고정됩니다.)
 
 ### Synthesize Speech
 

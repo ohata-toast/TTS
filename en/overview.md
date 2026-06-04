@@ -3,7 +3,7 @@
 Text to Speech(TTS) uses NHN Cloud's character recognition and speech synthesis technology to recognize input text and synthesize speech from the recognized characters.
 It can be used in various areas such as automatic response services and book/Internet document reading services.
 
-※ 본 서비스의 음성 합성 모델 학습에는 자체 데이터와 함께 AI 허브(https://aihub.or.kr) 데이터셋의 일부가 활용되었습니다
+※ 본 서비스의 음성 합성 모델 학습에는 자체 데이터와 함께 AI 허브(https://aihub.or.kr) 데이터셋의 일부를 활용했습니다.
 
 ## Main Features
 
@@ -24,7 +24,7 @@ It can be used in various areas such as automatic response services and book/Int
 For more accurate text-to-speech synthesis, please refer to the guide below.
 
 * Up to 150 characters (including spaces) of text can be entered.
-* For voice quality, it is recommended to enter less than 50 characters per sentence.
+* 음성 품질을 위해 문장당 50자 내로 입력할 것을 권장합니다.
 * Supported languages, numbers, and punctuation are supported for speech synthesis, and other text are excluded from the synthesis result.
     
 ## Service Targets
