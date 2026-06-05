@@ -1,5 +1,14 @@
 ## AI Service > Text to Speech > Release Notes
 
+### June 9, 2026
+
+* Changed supported languages
+    * (Previous) Korean, Japanese, Chinese, English → (Updated) Korean
+* Changed supported options
+    * (Previous) Gender, pitch, speed, volume, tone, intonation → (Updated) Gender, speed
+* Added new voice
+    * Female2
+
 ### September 26, 2023
 
 * Added supported languages
