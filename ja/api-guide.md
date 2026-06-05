@@ -41,7 +41,7 @@ Appkeyの確認及び使用に関する詳細は、[Appkey](/nhncloud/ja/public-
 | fileType     | String | 任意     | MP3      | MP3/WAV                  | ファイル形式(.mp3, .wav, .flac, .ogg, .alaw, .ulaw))                            |
 | speaker      | String | 任意     | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B | 音声の種類(男性、女性、女性2)                                                          |
 | speed        | Float  | 任意     | 1        | 0.5~2                    | 速度                                                                        |
-| samplingRate | Long   | 선택     | 22050    | 8000~44100               | 음성 파일의 샘플링 레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우에는 8000으로 고정되어야 합니다. |
+| samplingRate | Long   | 任意     | 22050    | 8000～44100               | 音声ファイルのサンプリングレート(16000Hz、22050Hz等)。alaw、ulawタイプの場合は8000に固定する必要があります。 |
 
 #### レスポンス
 
