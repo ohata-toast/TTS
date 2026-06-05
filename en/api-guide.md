@@ -4,22 +4,23 @@
 
 #### Request
 
-An AppKey or a Project Integrated Appkey is required to use the TTS API.<br/>
-An AppKey is a unique authentication key issued for each individual NHN Cloud service, while a Project Integrated Appkey is a common authentication key that can be shared across multiple services within a single NHN Cloud project.<br/>
-For more information on checking and using Appkeys, please refer to the [Appkey](/nhncloud/en/public-api/appkey). For more information on creating and using Project Integrated Appkeys, please refer to the [Project Integrated Appkey](/nhncloud/en/public-api/project-integrated-appkey).
+Appkey or project integrated Appkey is required to use Text to Speech (TTS) API.<br/>
+An Appkey is a unique authentication key issued for each NHN Cloud service. The project-integrated Appkey is an authentication key that can be commonly used across multiple services within a single project in NHN Cloud.<br/>
+For more information on checking and using an Appkey, see [Appkey](/nhncloud/ko/public-api/appkey). For more information on creating and using a project-integrated Appkey, see [Project-Integrated Appkey](/nhncloud/ko/public-api/project-integrated-appkey).
+
 
 [URI]
 
 | Method  | URI                                                              |
-|---------|------------------------------------------------------------------|
-| POST    | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+|------|------------------------------------------------------------------|
+| POST | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [Request Header]
 
-| Name          | Value            | Description                          |
-|---------------|------------------|--------------------------------------|
+| Name            | Value                | Description             |
+|---------------|------------------|----------------|
 | Authorization | {secretKey}      | Security key issued from the console |
-| Content-Type  | application/json |                                      |
+| Content-Type  | application/json |                |
 
 [Request Body]
 ```
@@ -34,13 +35,13 @@ For more information on checking and using Appkeys, please refer to the [Appkey]
 
 [Field]
 
-| Name         | Type   | Required | Default value | Valid range                | Description                                                               |
-|--------------|--------|----------|---------------|----------------------------|---------------------------------------------------------------------------|
-| inputText    | String | Required |               | Up to 150 characters       | Input text                                                                |
-| fileType     | String | Optional | MP3           | MP3/WAV/FLAC/OGG/ALAW/ULAW | File format(.mp3, .wav, .flac, .ogg, .alaw, .ulaw)                        |
-| speaker      | String | Optional | FEMALE        | MALE_A/FEMALE_A/FEMALE_B   | Voice type(Male, Female, Female2)                                         |
-| speed        | Float  | Optional | 1             | 0.5~2                      | Speed                                                                     |
-| samplingRate | Long   | 선택       | 22050         | 8000~44100                 | 음성 파일의 샘플링 레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우에는 8000으로 고정되어야 합니다. |
+| Name           | Type      | Required | Default      | Valid range                      | Description                                                                    |
+|--------------|---------|-------|----------|----------------------------|-----------------------------------------------------------------------|
+| inputText    | String  | Required    |          | up to 150 characters                    | Input text                                                                |
+| fileType     | String  | Optional    | MP3      | MP3/WAV/FLAC/OGG/ALAW/ULAW | File format (.mp3, .wav, .flac, .ogg, .alaw, .ulaw)                          |
+| speaker      | String  | Optional    | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B   | Vocie type (Male, female, female2)                                                    |
+| speed        | Float   | Optional    | 1        | 0.5~2                      | Speed                                                                    |
+| samplingRate | Long    | Optional    | 22050    | 8000~44100                 | Sampling rate of the audio file (e.g., 16,000 Hz, 22,050 Hz). For alaw and ulaw types, this must be fixed at 8,000. |
 
 #### Response
 
