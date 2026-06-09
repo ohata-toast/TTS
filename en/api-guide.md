@@ -6,7 +6,7 @@
 
 Appkey or project integrated Appkey is required to use Text to Speech (TTS) API.<br/>
 An Appkey is a unique authentication key issued for each NHN Cloud service. The project-integrated Appkey is an authentication key that can be commonly used across multiple services within a single project in NHN Cloud.<br/>
-For more information on checking and using an Appkey, see [Appkey](/nhncloud/ko/public-api/appkey). For more information on creating and using a project-integrated Appkey, see [Project-Integrated Appkey](/nhncloud/ko/public-api/project-integrated-appkey).
+For more information on checking and using an Appkey, see [Appkey](/nhncloud/en/public-api/appkey). For more information on creating and using a project-integrated Appkey, see [Project-Integrated Appkey](/nhncloud/en/public-api/project-integrated-appkey).
 
 
 [URI]
