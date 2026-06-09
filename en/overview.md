@@ -3,6 +3,8 @@
 Text to Speech(TTS) uses NHN Cloud's character recognition and speech synthesis technology to recognize input text and synthesize speech from the recognized characters.
 It can be used in various areas such as automatic response services and book/Internet document reading services.
 
+※ The speech synthesis model for this service was trained using proprietary data as well as a subset of datasets from AI Hub (https://aihub.or.kr).
+
 ## Main Features
 
 * **Speech synthesis**
@@ -10,11 +12,11 @@ It can be used in various areas such as automatic response services and book/Int
 
 * **Detailed settings for the voice file**
 	* You can set the conditions of voice for speech synthesis.
-		* Voice Type: You can set the voice type (male, female).
-		* Voice Emotion: You can set the voice emotion (neutral, dark, light).
+		* Voice type: You can set the voice type (male, female, and female2).
+		* Voice emotion: You can set the voice emotion (neutral, dark, and light).
 		* Pitch: You can set the pitch to implement the tone of the voice.
 		* Speed: You can set the speed (1x, 2x, etc.) of the voice.
-		* Volume: You can set the volume.
+        * Audio quality: You can set the audio quality of the audio file.
 
 * **Speech synthesis results download**
 	* You can download audio files (.wav, .mp3) of the voice converted from input text.
@@ -23,8 +25,8 @@ It can be used in various areas such as automatic response services and book/Int
 
 For more accurate text-to-speech synthesis, please refer to the guide below.
 
-* Up to 1,000 characters (including spaces) of text can be entered.
-* For voice quality, it is recommended to enter less than 200 characters per sentence.
+* Up to 150 characters (including spaces) of text can be entered.
+* For voice quality, it is recommended to enter less than 50 characters per sentence.
 * Supported languages, numbers, and punctuation are supported for speech synthesis, and other text are excluded from the synthesis result.
     
 ## Service Targets
