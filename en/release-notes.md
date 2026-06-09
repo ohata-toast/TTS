@@ -1,5 +1,9 @@
 ## AI Service > Text to Speech > Release Notes
 
+### 2026. 07. 07.
+
+* 도메인 변경
+
 ### June 9, 2026
 
 * Changed supported languages

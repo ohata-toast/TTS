@@ -13,7 +13,7 @@ Appkey 확인 및 사용에 대한 자세한 내용은 [Appkey](/nhncloud/ko/pub
 
 | 메서드  | URI                                                              |
 |------|------------------------------------------------------------------|
-| POST | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| POST | https://api-speech.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [요청 헤더]
 
