@@ -4,8 +4,7 @@
 
 #### Request
 
-TTS API uses User Access Key tokens for authentication and authorization when making API calls. The User Access Key token is a temporary, Bearer-type access token issued from a User Access Key.
-For more information on issuing and using User Access Key tokens, see the [User Access Key Token](/nhncloud/en/public-api/user-access-key-token).
+TTS API uses User Access Key tokens for authentication and authorization. The User Access Key token is a temporary, Bearer-type access token issued from a User Access Key. For more information on issuing and using User Access Key tokens, see the [User Access Key Token](/nhncloud/en/public-api/user-access-key-token).
 
 [URI]
 
@@ -17,8 +16,8 @@ For more information on issuing and using User Access Key tokens, see the [User 
 
 | Name                | Value                          | Description         |
 |---------------------|--------------------------------|---------------------|
-| X-NHN-Authorization | Bearer {User Access Key Token} | User Access Key 토큰 |
-| Content-Type        | application/json               |                     |
+| X-NHN-authorization | Bearer {User Access Key Token} | User Access Key token |
+| Content-type        | application/json               |                     |
 
 [Request Body]
 ```
@@ -35,11 +34,11 @@ For more information on issuing and using User Access Key tokens, see the [User 
 
 | Name         | Type   | Required | Default  | Valid range                | Description                                                                                                         |
 |--------------|--------|----------|----------|----------------------------|---------------------------------------------------------------------------------------------------------------------|
-| inputText    | String | Required |          | up to 150 characters       | Input text                                                                                                          |
+| inputText    | String | Required |          | Up to 150 characters       | Input text                                                                                                          |
 | fileType     | String | Optional | MP3      | MP3/WAV/FLAC/OGG/ALAW/ULAW | File format (.mp3, .wav, .flac, .ogg, .alaw, .ulaw)                                                                 |
 | speaker      | String | Optional | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B   | Voice type (Male, female, female2)                                                                                  |
-| speed        | Float  | Optional | 1        | 0.5~2                      | Speed                                                                                                               |
-| samplingRate | Long   | Optional | 22050    | 8000~44100                 | Sampling rate of the audio file (e.g., 16,000 Hz, 22,050 Hz). For alaw and ulaw types, this must be fixed at 8,000. |
+| speed        | Float  | Optional | 1        | 0.5-2                      | Speed                                                                                                               |
+| samplingRate | Long   | Optional | 2,2050    | 8,000-44,100                 | Sampling rate of the audio file (e.g., 16,000 Hz, 22,050 Hz). For alaw and ulaw types, this must be fixed at 8,000. |
 
 #### Response
 
