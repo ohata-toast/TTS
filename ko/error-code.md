@@ -1,6 +1,6 @@
 ## AI Service > Text to Speech > 오류 코드
 
-아래에 명시되지 않은 코드는 HTTP Response Status Code (RFC9110)를 따릅니다.
+아래에 명시되지 않은 코드는 HTTP Response Status Code(RFC9110)를 따릅니다.
 
 | resultCode | resultKey                | resultMessage                           |
 |------------|--------------------------|-----------------------------------------|
