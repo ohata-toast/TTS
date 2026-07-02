@@ -1,5 +1,12 @@
 ## AI Service > Text to Speech > リリースノート
 
+### 2026. 07. 07.
+
+* 도메인 변경
+* API v1.1リリース
+  * User Access Keyトークン認証を使用するAPIが追加されました。
+  * User Access Keyトークンの発行及び使用に関する詳細は、[User Access Keyトークン](/nhncloud/ja/public-api/user-access-key-token)を参照してください。
+
 ### 2026. 06. 09.
 
 * サポート言語の変更

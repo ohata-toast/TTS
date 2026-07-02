@@ -13,7 +13,7 @@ Appkeyの確認及び使用に関する詳細は、[Appkey](/nhncloud/ja/public-
 
 | メソッド  | URI                                                              |
 |-------|------------------------------------------------------------------|
-| POST  | https://speech.api.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| POST  | https://api-speech.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [リクエストヘッダ]
 
