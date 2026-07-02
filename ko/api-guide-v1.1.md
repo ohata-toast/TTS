@@ -38,7 +38,7 @@ TTS API를 사용하려면 인증/인가를 위해 User Access Key 토큰을 사
 | fileType     | String  | 선택    | MP3      | MP3/WAV/FLAC/OGG/ALAW/ULAW | 파일 형식(.mp3, .wav, .flac, .ogg, .alaw, .ulaw)                          |
 | speaker      | String  | 선택    | FEMALE_A | MALE_A/FEMALE_A/FEMALE_B   | 음성 종류(남성, 여성, 여성2)                                                    |
 | speed        | Float   | 선택    | 1        | 0.5~2                      | 속도                                                                    |
-| samplingRate | Long    | 선택    | 22050    | 8000~44100                 | 음성 파일의 샘플링 레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우에는 8000으로 고정되어야 합니다. |
+| samplingRate | Long    | 선택    | 22050    | 8000~44100                 | 음성 파일의 샘플링 레이트(16000Hz, 22050Hz 등). alaw, ulaw 타입의 경우 8000으로 고정해야 합니다. |
 
 #### 응답
 
