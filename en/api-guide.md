@@ -13,7 +13,7 @@ For more information on checking and using an Appkey, see [Appkey](/nhncloud/en/
 
 | Method | URI                                                              |
 |--------|------------------------------------------------------------------|
-| POST   | https://api-speech.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
+| POST | https://api-speech.nhncloudservice.com/v1.0/appkeys/{appKey}/tts |
 
 [Request Header]
 
