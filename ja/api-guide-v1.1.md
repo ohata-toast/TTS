@@ -17,7 +17,7 @@ User Access Keyトークンの発行及び使用に関する詳細は、[User Ac
 
 | 名前                  | 値                              | 説明                  |
 |---------------------|--------------------------------|---------------------|
-| X-NHN-Authorization | Bearer {User Access Key Token} | User Access Key 토큰 |
+| X-NHN-Authorization | Bearer {User Access Key Token} | User Access Keyトークン |
 | Content-Type        | application/json               |                     |
 
 [リクエスト本文]
